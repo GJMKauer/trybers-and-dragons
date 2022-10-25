@@ -40,16 +40,16 @@ Para mais detalhes, sugiro acessar documentações oficiais.
 
 Para iniciar o projeto, é necessário possuir o [Docker](https://docs.docker.com/engine/install/ubuntu/) instalado.
 
-Antes de iniciar o projeto, é necessário instalar as dependências dele com o comando
+Após clonar o projeto em seu computador, para iniciá-lo é necessário executar o comando
+```
+docker-compose up -d && docker exec -it trybers_and_dragons bash
+```
+e na sequência execute o comando
 ```
 npm install
 ```
 
-Para rodar o projeto, é necessário executar o comando
-```
-docker-compose up -d
-```
-na raíz do projeto. Isso fará com que os containers docker sejam orquestrados e a aplicação esteja disponível. Esse comando deve ser executado via terminal dentro do diretório onde está o arquivo **docker-compose.yml**.
+na pasta raíz do projeto. Isso fará com que os containers docker sejam orquestrados e a aplicação esteja disponível.
 
 O projeto trata-se de um desafio para consolidar o aprendizado de TypeScript junto com os princípios da Programação Orientada a Objetos (POO) e SOLID. Com isso, criamos um sistema de um jogo de RPG (_Role-Playing Gaming_) em que são criados jogadores (que têm raças e arquétipos), monstros, dragões e um sistema de luta PVP (_Player vs Player_ - Jogador vs Jogador) e PVE (_Player vs Environment_ - Jogador vs Ambiente).
 
